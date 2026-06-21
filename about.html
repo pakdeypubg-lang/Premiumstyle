@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Stride</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Stride</a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search shoes..." onkeyup="if(event.key === 'Enter') performSearch()">
+                <button onclick="performSearch()" style="background:none;border:none;color:white;cursor:pointer;">🔍</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" style="background:#f8f9fa; min-height:60vh; padding:5rem 2rem;">
+        <h2>About Stride</h2>
+        <div style="max-width: 700px; margin: 0 auto; text-align:center; font-size:1.1rem;">
+            <p>Founded in 2018, Stride brings together premium materials, innovative design, and unbeatable comfort. Every pair is crafted with care to help you move through life with confidence.</p>
+            <br>
+            <p>From city streets to mountain trails — we've got your steps covered.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3 style="font-size:1.8rem; margin-bottom:1rem;">Stride</h3>
+                <p>Premium footwear for the modern mover.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <p><a href="shop.html" style="color:white;">Shop</a></p>
+                <p><a href="about.html" style="color:white;">About Us</a></p>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <p>Instagram • TikTok • Twitter</p>
+            </div>
+        </div>
+        <p style="margin-top:3rem; opacity:0.7;">© 2026 Stride Store. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

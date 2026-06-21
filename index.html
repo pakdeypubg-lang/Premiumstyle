@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stride — Premium Sneakers & Shoes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Stride</a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search shoes..." onkeyup="if(event.key === 'Enter') performSearch()">
+                <button onclick="performSearch()" style="background:none;border:none;color:white;cursor:pointer;">🔍</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Step Into Style</h1>
+            <p>Discover premium sneakers and shoes crafted for comfort and confidence.</p>
+            <a href="shop.html" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3 style="font-size:1.8rem; margin-bottom:1rem;">Stride</h3>
+                <p>Premium footwear for the modern mover.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <p><a href="shop.html" style="color:white;">Shop</a></p>
+                <p><a href="about.html" style="color:white;">About Us</a></p>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <p>Instagram • TikTok • Twitter</p>
+            </div>
+        </div>
+        <p style="margin-top:3rem; opacity:0.7;">© 2026 Stride Store. All rights reserved.</p>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <h3>Added to Cart!</h3>
+            <p id="modalProductName"></p>
+            <button onclick="closeModal()" class="btn" style="margin-top:1rem;">Continue Shopping</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
